@@ -23,7 +23,7 @@ spec:
         - name: web-skp
           securityContext:
             null
-          image: "458891109543.dkr.ecr.us-east-1.amazonaws.com/web-skp:0.2.0"
+          image: 458891109543.dkr.ecr.us-east-1.amazonaws.com/web-skp:0.2.0
           imagePullPolicy: Always
           ports:
             - name: http
