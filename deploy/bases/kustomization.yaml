@@ -4,3 +4,8 @@ kind: Kustomization
 resources:
   # - service.yaml
   - deployment.yaml
+
+images:
+- name: web-skp
+  newName: 458891109543.dkr.ecr.us-east-1.amazonaws.com/web-skp
+  newTag: 0.6.0
