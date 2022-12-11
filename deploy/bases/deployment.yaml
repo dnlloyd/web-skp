@@ -20,22 +20,22 @@ spec:
       securityContext:
         null
       containers:
-        - name: web-skp
-          securityContext:
-            null
-          image: 458891109543.dkr.ecr.us-east-1.amazonaws.com/web-skp:0.2.0
-          imagePullPolicy: Always
-          ports:
-            - name: http
-              containerPort: 80
-              protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /
-              port: http
-          resources:
-            null
+      - name: web-skp
+        securityContext:
+          null
+        image: 458891109543.dkr.ecr.us-east-1.amazonaws.com/web-skp:0.2.0
+        imagePullPolicy: Always
+        ports:
+          - name: http
+            containerPort: 80
+            protocol: TCP
+        livenessProbe:
+          httpGet:
+            path: /
+            port: http
+        readinessProbe:
+          httpGet:
+            path: /
+            port: http
+        resources:
+          null
